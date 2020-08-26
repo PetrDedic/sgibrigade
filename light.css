@@ -1,0 +1,159 @@
+body {
+    background-color: #ffffff;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.row {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+#themes > a {
+    color: black;
+}
+
+.light{
+    display: none;
+}
+
+h1 {
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+    margin-top: 2%;
+    padding: 4%;
+    font-size: 9vh;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+#total {
+    color: gray;
+}
+
+#price {
+    background: -webkit-linear-gradient(left, purple , rgb(255, 1, 170));
+    background: -o-linear-gradient(right, purple , rgb(255, 1, 170));
+    background: -moz-linear-gradient(right, purple , rgb(255, 1, 170));
+    background: linear-gradient(to right, purple , rgb(255, 1, 170)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+footer {
+    background-color: #b9b9b9;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left:0;
+    min-width: 100%;
+    height: 8vh;
+    text-align: center;
+    border-top: black solid 2px;
+}
+
+footer > .material-icons {
+    vertical-align: middle;
+    font-size: 6vh !important;
+    margin-top: 1vh;
+    padding-left: 3.5vh;
+    padding-right: 3.5vh;
+}
+
+footer > .material-icons:hover {
+    color: #c300ff;
+    transition: 1100ms;
+}
+
+.current {
+    color: #c300ff !important;
+}
+
+.row {
+    margin: 0 -5px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.2);
+    padding: 7.5vh;
+    margin: 0.5vh;
+    text-align: center;
+    background-color: #5e5e5e;
+    border-radius: 15px;
+    display: inline-block;
+
+  }
+
+  .scrolling-wrapper {
+      overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+#total-month {
+    margin-bottom: 9vh;
+}
+
+#total-month > h2 {
+    margin-top: 8vh;
+    margin-bottom: 2vh;
+    border-bottom: black 1px solid;
+}
+
+#total-month > div {
+    font-family: 'Open Sans';
+    color: rgb(0, 0, 0);
+    border-bottom: black 1px solid;
+    font-size: 3.5vh;
+    margin-top: 2vh;
+}
+
+#price-month {
+    color: gray;
+}
+
+#date {
+    font-family: 'Open Sans';
+    color: black;
+    font-size:4vh;
+}
+
+b {
+    margin-top: 30px;
+}
+
+.hokej {
+    background: url("./images/default.jpg");
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+.syner {
+    background: url("./images/syner.jpg");
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+.active-action {
+    border: chartreuse 4px solid;
+}

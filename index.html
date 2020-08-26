@@ -1,17 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="dark.css" id="theme" title="Dark">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <script src="themes.js"></script>
 </head>
+
 <body>
+    <div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span style="font-size: 4vh;" class="material-icons">
+                wb_sunny
+            </span></a>
+        <a class="dark" href="#" onclick="changeCSS('dark.css', 0);"><span style="font-size: 4vh;" class="material-icons">
+                brightness_3
+            </span></a>
+    </div>
+
+
+
+    <header>
+        <h1>SGI</h1>
+    </header>
+
+
+
+    <section id="month">
+        <h2>Akce tento měsíc</h2>
+        <div class="row">
+            <div class="card hokej"><b id="date">21.9</b></div>
+            <div class="card hokej"><b id="date">27.9</b></div>
+            <div class="card syner active-action"><b id="date">28.9</b></div>
+            <div class="card hokej"><b id="date">30.9</b></div>
+        </div>
+        <h2 id="total">Celkově: <span id="price">xxxx,-</span></h2>
+    </section>
+
+
+    <section id="total-month">
+        <h2>Přehledný výpis</h2>
+        <div>Hokej 21.9 - 9h - <span id="price-month">587,-</span></div>
+        <div>Hokej 27.9 - 8h - <span id="price-month">480,-</span></div>
+        <div>SYNER 28.9 - 12h - <span id="price-month">xxxx,-</span></div>
+        <div>Hokej 30.9 - 8h - <span id="price-month">xxxx,-</span></div>
+    </section>
+
+
     <footer>
         <span class="material-icons current">
-        home
+            home
         </span>
         <span class="material-icons">
             search
@@ -21,4 +63,5 @@
         </span>
     </footer>
 </body>
+
 </html>
