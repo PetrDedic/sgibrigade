@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGI Search</title>
+    <link rel="stylesheet" href="dark.css" id="theme" title="Dark">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+    <script src="themes.js"></script>
+    <script src="footer.js"></script>
+    <script src="searching.js"></script>
+</head>
+
+<body>
+    <div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span
+                style="font-size: 4vh;" class="material-icons">
+                wb_sunny
+            </span></a>
+        <a class="dark" href="#" onclick="changeCSS('dark.css', 0);"><span style="font-size: 4vh;"
+                class="material-icons">
+                brightness_3
+            </span></a>
+    </div>
+
+    <div id="search-header"><b>Hledat</b></div>
+
+    <div id="inputarea">
+        <span id="search" class="material-icons">
+            search
+        </span>
+        <input style="display:table-cell;" onclick="search()" type="text" id="myInput" placeholder="Filtrovat akce a lidi...">
+    </div>
+
+    
+    <footer>
+        <span onclick="changeSiteIndex()" class="material-icons">
+            home
+        </span>
+        <span class="material-icons  current">
+            search
+        </span>
+        <span onclick="changeSiteProfile()" class="material-icons">
+            perm_contact_calendar
+        </span>
+    </footer>
+</body>
+
+</html>

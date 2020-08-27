@@ -4,3 +4,6 @@ function changeSiteIndex() {
 function changeSiteProfile() {
     location.replace("./profile.html")
 }
+function changeSiteSearch() {
+    location.replace("./search.html")
+}

@@ -216,3 +216,47 @@ h3 > span {
     border-radius: 88888px;
     margin-bottom: 15vh;
 }
+
+#check {
+    color: greenyellow; 
+    font-weight: bold;
+}
+
+/* Input */
+#myInput {
+    width: 82%;
+    height: 4vh;
+    border-radius: 8888px;
+    font-size: 3vh;
+    background-color: #232325;
+    padding: 1vh;
+    border-bottom: #c300ff solid 3.5px;
+    border-right: #c300ff solid 3.5px;
+  }
+
+#search {
+    margin-top: 1vh;
+    color: black;
+    font-size: 4vh;
+    vertical-align: -1.5vh;
+}
+
+#inputarea {
+    margin-top: 10vh;
+}
+
+#search-header {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 8vh;
+    margin-top: 10vh;
+    color: black;
+}
+
+.search-top-header {
+    display: none;
+}
+
+.search-top {
+    margin-top: 0 !important;
+}
