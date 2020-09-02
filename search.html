@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGI Search</title>
-    <link rel="stylesheet" href="dark.css" id="theme" title="Dark">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
-    <script src="themes.js"></script>
-    <script src="footer.js"></script>
-    <script src="searching.js"></script>
-</head>
+    <head>
+        <script>
+            let currenttheme = localStorage.getItem('storagetheme');
+    
+            if (currenttheme == null) {
+    
+                var head = document.getElementsByTagName('HEAD')[0];
+                var link = document.createElement('link');
+    
+                link.rel = 'stylesheet';
+    
+                link.type = 'text/css';
+    
+                link.href = 'dark.css';
+    
+                link.id = 'theme';
+    
+                head.appendChild(link);
+            } else {
+    
+                var head = document.getElementsByTagName('HEAD')[0];
+                var link = document.createElement('link');
+    
+                link.rel = 'stylesheet';
+    
+                link.type = 'text/css';
+    
+                link.href = currenttheme;
+    
+                link.id = 'theme';
+    
+                head.appendChild(link);
+            }
+    
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SGI Search</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;600&display=swap" rel="stylesheet">
+        <script src="themes.js"></script>
+        <script src="footer.js"></script>
+        <script src="localstorage.js"></script>
+    
+    </head>
 
 <body>
     <div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span
