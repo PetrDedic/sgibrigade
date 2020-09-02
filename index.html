@@ -45,62 +45,96 @@
     <script src="themes.js"></script>
     <script src="footer.js"></script>
     <script src="localstorage.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 
+    <link rel="stylesheet" href="rains.css">
+    <script src="rain.js"></script>
 </head>
 
-<body onload="loadtheme(), js_Load();" style="visibility: hidden;">
-    <div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span
-                style="font-size: 4vh;" class="material-icons">
-                wb_sunny
-            </span></a>
-        <a class="dark" href="#" onclick="changeCSS('dark.css', 0);"><span style="font-size: 4vh;"
-                class="material-icons">
-                brightness_3
-            </span></a>
+<body onload="loadtheme(), js_Load(), makeItRain();" style="visibility: hidden;" class="back-row-toggle splat-toggle">
+    <div class="rain front-row"></div>
+<div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span
+            style="font-size: 4vh; z-index: 99999;" class="material-icons">
+            wb_sunny
+        </span></a>
+    <a class="dark" href="#" onclick="changeCSS('dark.css', 0);"><span style="font-size: 4vh; z-index: 99999;" class="material-icons">
+            brightness_3
+        </span></a>
+</div>
+
+<div class="rain front-row"></div>
+
+<header>
+    <h1>SGI</h1>
+</header>
+
+
+
+<section id="month">
+    <h2>Akce tento měsíc</h2>
+    <div class="row">
+        <div class="card hokej tooltip"><b id="date">2.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+                </span></span></div>
+        <div class="card hokej tooltip"><b id="date">7.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card syner tooltip"><b id="date">8.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card hokej tooltip"><b id="date">19.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card hokej tooltip"><b id="date">21.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card hokej tooltip"><b id="date">27.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card syner active-action tooltip"><b id="date">28.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
+        <div class="card hokej tooltip"><b id="date">30.9</b><span class="tooltiptext"><span
+                    onclick="this.style.color = 'greenyellow';" class="material-icons">
+                    check
+
+                </span></span></div>
     </div>
+    <h2 id="total">Tento měsíc: <span id="price">1067,-</span></h2>
+</section>
 
 
-
-    <header>
-        <h1>SGI</h1>
-    </header>
-
-
-
-    <section id="month">
-        <h2>Akce tento měsíc</h2>
-        <div class="row">
-            <div class="card hokej"><b id="date">2.9</b></div>
-            <div class="card hokej"><b id="date">7.9</b></div>
-            <div class="card syner"><b id="date">8.9</b></div>
-            <div class="card hokej"><b id="date">19.9</b></div>
-            <div class="card hokej"><b id="date">21.9</b></div>
-            <div class="card hokej"><b id="date">27.9</b></div>
-            <div class="card syner active-action"><b id="date">28.9</b></div>
-            <div class="card hokej"><b id="date">30.9</b></div>
-        </div>
-        <h2 id="total">Tento měsíc: <span id="price">1067,-</span></h2>
-    </section>
+<section id="total-month">
+    <h2>Zatím tento měsíc</h2>
+    <div>Hokej 21.9 - 9h - <span id="price-month">587,-</span></div>
+    <div>Hokej 27.9 - 8h - <span id="price-month">480,-</span></div>
+</section>
 
 
-    <section id="total-month">
-        <h2>Zatím tento měsíc</h2>
-        <div>Hokej 21.9 - 9h - <span id="price-month">587,-</span></div>
-        <div>Hokej 27.9 - 8h - <span id="price-month">480,-</span></div>
-    </section>
-
-
-    <footer>
-        <span class="material-icons current">
-            home
-        </span>
-        <span onclick="changeSiteSearch()" class="material-icons">
-            search
-        </span>
-        <span onclick="changeSiteProfile()" class="material-icons">
-            perm_contact_calendar
-        </span>
-    </footer>
+<footer>
+    <span class="material-icons current">
+        home
+    </span>
+    <span onclick="changeSiteSearch()" class="material-icons">
+        search
+    </span>
+    <span onclick="changeSiteProfile()" class="material-icons">
+        perm_contact_calendar
+    </span>
+</footer>
 </body>
 
 </html>

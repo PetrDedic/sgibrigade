@@ -14,6 +14,21 @@ body::-webkit-scrollbar {
     display: none;
   }
 
+  .row::-webkit-scrollbar {
+    width: 10px;
+  }
+  .row::-webkit-scrollbar-track {
+    background: #b9b9b9; 
+    border-radius: 10px;
+  }
+  .row::-webkit-scrollbar-thumb {
+    background: #232325; 
+    border-radius: 10px;
+  }
+  .row::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 #themes > a {
     color: white;
 }
@@ -94,6 +109,7 @@ footer > .material-icons:hover {
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
+    padding-top: 4vh;
 }
 
 .row:after {
@@ -104,12 +120,11 @@ footer > .material-icons:hover {
   
 
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
     padding: 7.5vh;
     margin: 0.5vh;
     text-align: center;
     background-color: #5e5e5e;
-    border-radius: 15px;
     display: inline-block;
 
   }
@@ -274,6 +289,38 @@ h3 > span {
     margin-top: 0 !important;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #232325;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .tooltiptext .material-icons:hover {
+    cursor: pointer;
+
+      color: rgb(207, 243, 154);
+      transition: 400ms;
+  }
 @media screen and (max-width: 700px) {
 
     body {
