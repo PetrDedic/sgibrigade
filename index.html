@@ -48,7 +48,7 @@
 
 </head>
 
-<body onload="loadtheme();">
+<body onload="loadtheme(), js_Load();" style="visibility: hidden;">
     <div style="text-align: right;" id=themes> <a class="light" href="#" onclick="changeCSS('light.css', 0);"><span
                 style="font-size: 4vh;" class="material-icons">
                 wb_sunny
@@ -70,6 +70,10 @@
     <section id="month">
         <h2>Akce tento měsíc</h2>
         <div class="row">
+            <div class="card hokej"><b id="date">2.9</b></div>
+            <div class="card hokej"><b id="date">7.9</b></div>
+            <div class="card syner"><b id="date">8.9</b></div>
+            <div class="card hokej"><b id="date">19.9</b></div>
             <div class="card hokej"><b id="date">21.9</b></div>
             <div class="card hokej"><b id="date">27.9</b></div>
             <div class="card syner active-action"><b id="date">28.9</b></div>

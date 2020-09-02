@@ -7,3 +7,9 @@ function changeSiteProfile() {
 function changeSiteSearch() {
     location.replace("./search.html")
 }
+
+//elimiace probliknutí html při načtení stránky
+
+function js_Load() {
+    document.body.style.visibility='visible';
+}
