@@ -8,7 +8,12 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-
+#accepted {
+    border-bottom: greenyellow 2px solid;
+}
+#rejected {
+    border-bottom: crimson 2px solid;
+}
 
 body::-webkit-scrollbar {
     display: none;
@@ -318,14 +323,15 @@ h3 > span {
   .tooltiptext .material-icons:hover {
     cursor: pointer;
 
-      color: rgb(207, 243, 154);
+      color: rgb(131, 131, 131);
       transition: 400ms;
   }
 @media screen and (max-width: 700px) {
-
+    .row::-webkit-scrollbar {
+display: none;      }
     body {
         background-color: #131417;
-        margin: 2%;
+        margin: 4%;
     }
     
     
