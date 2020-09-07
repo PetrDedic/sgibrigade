@@ -12,10 +12,10 @@ body::-webkit-scrollbar {
 }
 
 #accepted {
-    border-bottom: greenyellow 2px solid;
+    border-bottom: greenyellow 4px solid;
 }
 #rejected {
-    border-bottom: crimson 2px solid;
+    border-bottom: crimson 4px solid;
 }
 
 
@@ -97,6 +97,7 @@ footer > .material-icons {
     margin-top: 1vh;
     padding-left: 3.5vh;
     padding-right: 3.5vh;
+    cursor: pointer;
 }
 
 footer > .material-icons:hover {
