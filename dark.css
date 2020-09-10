@@ -1,6 +1,5 @@
 :root {
-    background: #131417;
-
+    font-family: 'Open Sans';
 }
 
 body {
@@ -52,12 +51,14 @@ h1 {
     color: white;
     font-size: 15vh;
     margin-left: 4%;
+    margin-top: 0;
 }
 
 h2 {
     font-family: 'Open Sans';
     color: white;
     margin-bottom: 0;
+    border-bottom: black 1px solid;
 }
 
 h3 {
@@ -72,6 +73,8 @@ h3 {
 
 #total {
     color: gray;
+    border-bottom: none !important;
+    font-size: 5vh;
 }
 
 #price {
@@ -222,7 +225,7 @@ footer > a {
 #profile-card > h2 {
     text-align: center;
     margin-bottom: 8vh;
-
+    border-bottom: none !important;
 }
 
 #profile-card > h3 {
@@ -248,6 +251,12 @@ h3 > span {
     border: #c300ff 2px solid;
     border-radius: 88888px;
     margin-bottom: 15vh;
+}
+
+#money:hover {
+    background-color: #d651ff;
+    transition: 500ms;
+    cursor: pointer;
 }
 
 #check {
@@ -520,7 +529,6 @@ display: none;      }
     #profile-card > h2 {
         text-align: center;
         margin-bottom: 8vh;
-    
     }
     
     #profile-card > h3 {
