@@ -38,7 +38,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGI Profile</title>
+    <title>SGI Account Details</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -60,37 +60,21 @@
             </span></a>
     </div>
 
-    <section>
-        <div id="profile-card">
-            <img src="./images/rsz_me.jpg" alt="me2">
-            <h2>Petr Dědic</h2>
-            <h3>Pozice: <span>brigádník</span></h3>
-            <h3>Registrován: <span>21.8 2020</span></h3>
-            <h3>Potvrzení o studiu: <span><span id="check" class="material-icons">
-                        check
-                    </span>
-                </span></h3>
-            <h3>Kontakt: <span><a href="facebook.com/PetaDedic"></a><span class="material-icons">
-                        facebook
-                    </span>
-                    <span class="material-icons">
-                        call
-                    </span></span></h3>
-            <h3>Účet: <span>1916083015/3030</span></h3>
-        </div>
-    </section>
-
-    <section>
-        <div id="money" onclick="change()"><a>Změnit údaje</a></div>
-    </section>
-
-    <section id="total-month">
-        <h2>Akce celý měsíc</h2>
-        <div>Hokej 21.9 - 9h - <span id="price-month">587,-</span></div>
-        <div>Hokej 27.9 - 8h - <span id="price-month">480,-</span></div>
-        <div>SYNER 28.9 - 12h - <span id="price-month">xxxx,-</span></div>
-        <div>Hokej 30.9 - 8h - <span id="price-month">xxxx,-</span></div>
-    </section>
+    <form action="./profile.html"">
+        <label for="fbname">Facebook:</label><br>
+        <input type="text" id="fb" name="fname" value=""><span id="rightallign" class="material-icons">
+            facebook
+            </span><br>
+        <label for="phonenumber">Telefonní číslo:</label><br>
+        <input type="text" id="phone" name="lname" value=""><span id="rightallign" class="material-icons">
+            call
+            </span><br>
+        <label for="accnumber">Číslo účtu:</label><br>
+        <input type="text" id="acc" name="lname" value=""><span id="rightallign" class="material-icons">
+            monetization_on
+            </span><br><br>
+        <input id="safe" type="submit" style="text-align: center;" value="Uložit" onclick="changeSiteProfile()">
+    </form> 
 
     <footer>
         <span onclick="changeSiteIndex()" class="material-icons">

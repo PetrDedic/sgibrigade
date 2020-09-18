@@ -13,3 +13,7 @@ function changeSiteSearch() {
 function js_Load() {
     document.body.style.visibility='visible';
 }
+
+function change() {
+    location.replace("./accountdetails.html")
+}

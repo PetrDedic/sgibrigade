@@ -337,7 +337,49 @@ h3 > span {
       transition: 400ms;
   }
 
-  
+
+  label {
+    color: black;
+}
+
+form > input {
+    text-align: center;
+    width: 85%;
+    height: 4vh;
+    border-radius: 8888px;
+    font-size: 3vh;
+    background-color: #ffffff;
+    padding: 1vh;
+    border-bottom: #c300ff solid 4px;
+    border-right: #c300ff solid 4px;
+    margin: 2%;
+}
+
+#safe {
+    text-align: center;
+    width: 45%;
+    height: 10%;
+    border-radius: 0;
+    font-size: 3vh;
+    background-color: 0;
+    padding: 1vh;
+    border-bottom: #c300ff solid 2px;
+    border-right: #c300ff solid 2px;
+    color: black;
+}
+
+#safe:hover {
+    background-color: #555;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#rightallign {
+    text-align: right;
+    font-size: 3vh;
+    color: black;
+    vertical-align:middle;
+}
 @media screen and (max-width: 700px) {
     .row::-webkit-scrollbar {
 display: none;      }
